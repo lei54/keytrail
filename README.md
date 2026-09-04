@@ -1,5 +1,7 @@
 # KeyTrail 键迹
 
+[English](README.en.md) · [日本語](README.ja.md)
+
 KeyTrail 是一款本地运行、开源、离线的 Windows 键盘使用习惯统计工具。它只记录“按键时间 + 键位 + 事件类型”，不记录输入内容、不截图、不联网，数据只保存在你自己的电脑上。
 
 ## 功能
@@ -65,4 +67,3 @@ dotnet build KeyTrail.slnx
 ## License
 
 MIT，见 [LICENSE](LICENSE)。
-
