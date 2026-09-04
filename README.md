@@ -2,9 +2,9 @@
 
 这是作者的处女作（虽说是用codex制作的，也算吧）
 利用deepseek v4 flash全程制作，可以理解为一个测试ds性能和codex的娱乐小软件，希望你们用的开心。
-以下是中文介绍：
+以下是介绍：
 
-[English](README.en.md) · [日本語](README.ja.md)
+English version is here[English](README.en.md) · 日本語版はこちらです[日本語](README.ja.md)
 
 KeyTrail 是一款本地运行、开源、离线的 Windows 键盘使用习惯统计工具。它只记录“按键时间 + 键位 + 事件类型”，不记录输入内容、不截图、不联网，数据只保存在你自己的电脑上。
 
