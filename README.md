@@ -1,4 +1,8 @@
-# KeyTrail 键迹
+# KeyTrail 键迹 一款给码农（？准备的键盘轨迹记录软件
+
+这是作者的处女作（虽说是用codex制作的，也算吧）
+利用deepseek v4 flash全程制作，可以理解为一个测试ds性能和codex的娱乐小软件，希望你们用的开心。
+以下是中文介绍：
 
 [English](README.en.md) · [日本語](README.ja.md)
 
@@ -67,3 +71,4 @@ dotnet build KeyTrail.slnx
 ## License
 
 MIT，见 [LICENSE](LICENSE)。
+
