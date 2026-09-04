@@ -1,0 +1,127 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:sys="clr-namespace:System;assembly=System.Runtime">
+    <sys:String x:Key="App.Title">KeyTrail · Keyboard Usage Stats</sys:String>
+
+    <sys:String x:Key="Nav.Home">Today</sys:String>
+    <sys:String x:Key="Nav.History">History</sys:String>
+    <sys:String x:Key="Nav.Insights">Insights</sys:String>
+    <sys:String x:Key="Nav.Settings">Settings</sys:String>
+
+    <sys:String x:Key="Status.Recording">Recording</sys:String>
+    <sys:String x:Key="Status.Paused">Paused</sys:String>
+
+    <sys:String x:Key="Home.Today">Today</sys:String>
+    <sys:String x:Key="Home.TotalToday">Keys today</sys:String>
+    <sys:String x:Key="Home.CurrentSlot">Current period</sys:String>
+    <sys:String x:Key="Home.ActiveMinutes">Active minutes</sys:String>
+    <sys:String x:Key="Home.KeyboardHeat">Keyboard heat</sys:String>
+    <sys:String x:Key="Home.TopKeys">Top keys</sys:String>
+    <sys:String x:Key="Home.CurveTitle">24-hour activity</sys:String>
+    <sys:String x:Key="Home.YesterdayTotal">Yesterday</sys:String>
+    <sys:String x:Key="Home.CompareUp">up vs yesterday</sys:String>
+    <sys:String x:Key="Home.CompareDown">down vs yesterday</sys:String>
+    <sys:String x:Key="Home.CompareSame">flat vs yesterday</sys:String>
+    <sys:String x:Key="Home.CompareFrom">yesterday</sys:String>
+    <sys:String x:Key="Home.NoData">No keys recorded today yet</sys:String>
+    <sys:String x:Key="Home.KeyUnit">keys</sys:String>
+    <sys:String x:Key="Home.PerMinute">keys/min</sys:String>
+
+    <sys:String x:Key="History.Title">History</sys:String>
+    <sys:String x:Key="History.Day">Day</sys:String>
+    <sys:String x:Key="History.Week">Week</sys:String>
+    <sys:String x:Key="History.Month">Month</sys:String>
+    <sys:String x:Key="History.Total">Keys in range</sys:String>
+    <sys:String x:Key="History.HourCurve">Activity by hour</sys:String>
+    <sys:String x:Key="History.SlotShare">Time-slot share</sys:String>
+    <sys:String x:Key="History.KeyboardHeat">Keyboard heat in range</sys:String>
+    <sys:String x:Key="History.Trend">Daily trend</sys:String>
+    <sys:String x:Key="History.NoData">No data in the selected range</sys:String>
+    <sys:String x:Key="History.Range">Range</sys:String>
+    <sys:String x:Key="History.PressPerDay">Daily average</sys:String>
+    <sys:String x:Key="History.All">All slots</sys:String>
+
+    <sys:String x:Key="Insights.Title">Insights</sys:String>
+    <sys:String x:Key="Insights.Period">Insight range</sys:String>
+    <sys:String x:Key="Insights.Presses">Presses</sys:String>
+    <sys:String x:Key="Insights.AvgGap">Avg key interval</sys:String>
+    <sys:String x:Key="Insights.MedianGap">Median key interval</sys:String>
+    <sys:String x:Key="Insights.Bursts">Bursts</sys:String>
+    <sys:String x:Key="Insights.AvgBurst">Avg burst length</sys:String>
+    <sys:String x:Key="Insights.ShortBreaks">Short breaks</sys:String>
+    <sys:String x:Key="Insights.LongBreaks">Long breaks</sys:String>
+    <sys:String x:Key="Insights.ActiveMinutes">Active minutes</sys:String>
+    <sys:String x:Key="Insights.LongestActive">Longest active run</sys:String>
+    <sys:String x:Key="Insights.Hotkeys">Top shortcuts</sys:String>
+    <sys:String x:Key="Insights.Modifiers">Modifier usage</sys:String>
+    <sys:String x:Key="Insights.Groups">Key group share</sys:String>
+    <sys:String x:Key="Insights.Weekday">Weekday pattern</sys:String>
+    <sys:String x:Key="Insights.NoData">No data in this range</sys:String>
+    <sys:String x:Key="Insights.Min">min</sys:String>
+    <sys:String x:Key="Insights.Ms">ms</sys:String>
+    <sys:String x:Key="Insights.BreakUnit"></sys:String>
+    <sys:String x:Key="Insights.Key"></sys:String>
+
+    <sys:String x:Key="Group.Modifier">Modifiers</sys:String>
+    <sys:String x:Key="Group.Letters">Letters</sys:String>
+    <sys:String x:Key="Group.Digits">Digits</sys:String>
+    <sys:String x:Key="Group.Punctuation">Punctuation</sys:String>
+    <sys:String x:Key="Group.Editing">Editing</sys:String>
+    <sys:String x:Key="Group.Navigation">Navigation</sys:String>
+    <sys:String x:Key="Group.Function">Function</sys:String>
+    <sys:String x:Key="Group.Other">Other</sys:String>
+
+    <sys:String x:Key="Weekday.Mon">Mon</sys:String>
+    <sys:String x:Key="Weekday.Tue">Tue</sys:String>
+    <sys:String x:Key="Weekday.Wed">Wed</sys:String>
+    <sys:String x:Key="Weekday.Thu">Thu</sys:String>
+    <sys:String x:Key="Weekday.Fri">Fri</sys:String>
+    <sys:String x:Key="Weekday.Sat">Sat</sys:String>
+    <sys:String x:Key="Weekday.Sun">Sun</sys:String>
+
+    <sys:String x:Key="Slot.Night">Late night</sys:String>
+    <sys:String x:Key="Slot.Morning">Morning</sys:String>
+    <sys:String x:Key="Slot.Noon">Noon</sys:String>
+    <sys:String x:Key="Slot.Evening">Evening</sys:String>
+
+    <sys:String x:Key="Settings.Title">Settings</sys:String>
+    <sys:String x:Key="Settings.General">General</sys:String>
+    <sys:String x:Key="Settings.Language">Language</sys:String>
+    <sys:String x:Key="Settings.Theme">Theme</sys:String>
+    <sys:String x:Key="Settings.ThemeLight">Beige</sys:String>
+    <sys:String x:Key="Settings.ThemeDark">Dark</sys:String>
+    <sys:String x:Key="Settings.AutoStart">Start at login</sys:String>
+    <sys:String x:Key="Settings.RecordOnStartup">Start recording on launch</sys:String>
+    <sys:String x:Key="Settings.MinimizeTray">Minimize to tray on close</sys:String>
+    <sys:String x:Key="Settings.Schedule">Time-slot boundaries</sys:String>
+    <sys:String x:Key="Settings.ScheduleHint">Set three cut points (hours). Slots are 0–①, ①–②, ②–③, ③–24.</sys:String>
+    <sys:String x:Key="Settings.Data">Data</sys:String>
+    <sys:String x:Key="Settings.DataPath">Data location</sys:String>
+    <sys:String x:Key="Settings.Retention">Detail retention (days)</sys:String>
+    <sys:String x:Key="Settings.RetentionNever">0 = keep forever</sys:String>
+    <sys:String x:Key="Settings.RetentionHint">Events older than this are deleted; charts are rebuilt from remaining details.</sys:String>
+    <sys:String x:Key="Settings.ClearHistory">Clear all statistics</sys:String>
+    <sys:String x:Key="Settings.ClearConfirm">Delete all key records? This cannot be undone.</sys:String>
+    <sys:String x:Key="Settings.ClearDone">All statistics cleared.</sys:String>
+    <sys:String x:Key="Settings.ExportCsv">Export aggregate CSV</sys:String>
+    <sys:String x:Key="Settings.ExportDone">Exported to:</sys:String>
+    <sys:String x:Key="Settings.OpenDataFolder">Open data folder</sys:String>
+    <sys:String x:Key="Settings.Privacy">Privacy boundary</sys:String>
+    <sys:String x:Key="Settings.PrivacyBody">This program records only key timings, key codes and event types. It never records text content, takes screenshots, or goes online. Data stays on this machine. Pause recording while entering passwords or other sensitive text.</sys:String>
+    <sys:String x:Key="Settings.About">About</sys:String>
+    <sys:String x:Key="Settings.Version">Version 0.1.0</sys:String>
+    <sys:String x:Key="Settings.AutostartError">Could not write the autostart entry. Check permissions.</sys:String>
+
+    <sys:String x:Key="Tray.Show">Open main window</sys:String>
+    <sys:String x:Key="Tray.Toggle">Start / Pause</sys:String>
+    <sys:String x:Key="Tray.Pause">Pause</sys:String>
+    <sys:String x:Key="Tray.Start">Start</sys:String>
+    <sys:String x:Key="Tray.Exit">Exit</sys:String>
+
+    <sys:String x:Key="Common.Open">Open</sys:String>
+    <sys:String x:Key="Common.Close">Close</sys:String>
+    <sys:String x:Key="Common.Confirm">OK</sys:String>
+    <sys:String x:Key="Common.Cancel">Cancel</sys:String>
+    <sys:String x:Key="Common.NoData">No data</sys:String>
+    <sys:String x:Key="Common.Elapsed">Total</sys:String>
+</ResourceDictionary>

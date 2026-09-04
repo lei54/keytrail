@@ -1,0 +1,186 @@
+<UserControl x:Class="KeyTrail.Views.SettingsView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <UserControl.Resources>
+        <Style x:Key="SectionCard" TargetType="Border"
+               BasedOn="{StaticResource CardStyle}">
+            <Setter Property="Margin" Value="0,12,16,0" />
+        </Style>
+        <Style x:Key="FieldLabel" TargetType="TextBlock">
+            <Setter Property="Foreground" Value="{DynamicResource TextPrimary}" />
+            <Setter Property="FontSize" Value="13" />
+            <Setter Property="FontWeight" Value="SemiBold" />
+            <Setter Property="Margin" Value="0,10,0,4" />
+        </Style>
+    </UserControl.Resources>
+
+    <ScrollViewer VerticalScrollBarVisibility="Auto" Padding="26,22,10,20">
+        <StackPanel>
+            <TextBlock Style="{StaticResource PageTitle}"
+                       Text="{DynamicResource Settings.Title}" />
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <StackPanel Grid.Column="0" Margin="0,0,14,0">
+                    <Border Style="{StaticResource SectionCard}">
+                        <StackPanel>
+                            <TextBlock Style="{StaticResource SectionTitle}"
+                                       Text="{DynamicResource Settings.General}" />
+
+                            <TextBlock Style="{StaticResource FieldLabel}"
+                                       Text="{DynamicResource Settings.Language}" />
+                            <Border Background="{DynamicResource AccentSoft}" CornerRadius="10" Padding="4,3"
+                                    HorizontalAlignment="Left">
+                                <StackPanel Orientation="Horizontal">
+                                    <RadioButton Style="{StaticResource SegmentedButton}"
+                                                 Content="中文" GroupName="lang" Tag="zh"
+                                                 Checked="Language_Checked" />
+                                    <RadioButton Style="{StaticResource SegmentedButton}"
+                                                 Content="English" GroupName="lang" Tag="en"
+                                                 Checked="Language_Checked" />
+                                    <RadioButton Style="{StaticResource SegmentedButton}"
+                                                 Content="日本語" GroupName="lang" Tag="ja"
+                                                 Checked="Language_Checked" />
+                                </StackPanel>
+                            </Border>
+
+                            <TextBlock Style="{StaticResource FieldLabel}"
+                                       Text="{DynamicResource Settings.Theme}" />
+                            <Border Background="{DynamicResource AccentSoft}" CornerRadius="10" Padding="4,3"
+                                    HorizontalAlignment="Left">
+                                <StackPanel Orientation="Horizontal">
+                                    <RadioButton Style="{StaticResource SegmentedButton}"
+                                                 Content="{DynamicResource Settings.ThemeLight}"
+                                                 GroupName="theme" Tag="Light"
+                                                 Checked="Theme_Checked" />
+                                    <RadioButton Style="{StaticResource SegmentedButton}"
+                                                 Content="{DynamicResource Settings.ThemeDark}"
+                                                 GroupName="theme" Tag="Dark"
+                                                 Checked="Theme_Checked" />
+                                </StackPanel>
+                            </Border>
+
+                            <CheckBox Content="{DynamicResource Settings.RecordOnStartup}"
+                                      Margin="0,14,0,0"
+                                      Foreground="{DynamicResource TextPrimary}"
+                                      IsChecked="{Binding RecordOnStartup, Mode=TwoWay}" />
+                            <CheckBox Content="{DynamicResource Settings.AutoStart}"
+                                      Margin="0,8,0,0"
+                                      Foreground="{DynamicResource TextPrimary}"
+                                      IsChecked="{Binding AutoStart, Mode=TwoWay}" />
+                            <CheckBox Content="{DynamicResource Settings.MinimizeTray}"
+                                      Margin="0,8,0,0"
+                                      Foreground="{DynamicResource TextPrimary}"
+                                      IsChecked="{Binding MinimizeToTray, Mode=TwoWay}" />
+                        </StackPanel>
+                    </Border>
+
+                    <Border Style="{StaticResource SectionCard}">
+                        <StackPanel>
+                            <TextBlock Style="{StaticResource SectionTitle}"
+                                       Text="{DynamicResource Settings.Schedule}" />
+                            <TextBlock Style="{StaticResource BodyText}"
+                                       Margin="0,6,0,0"
+                                       Text="{DynamicResource Settings.ScheduleHint}" />
+                            <Grid Margin="0,8,0,0">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="Auto" />
+                                </Grid.ColumnDefinitions>
+                                <StackPanel Grid.Column="0">
+                                    <TextBlock Text="{DynamicResource Slot.Night}"
+                                               Style="{StaticResource FieldLabel}" />
+                                    <TextBox Text="{Binding MorningEnd, UpdateSourceTrigger=PropertyChanged}"
+                                             Width="80" Padding="6,4" HorizontalAlignment="Left" />
+                                </StackPanel>
+                                <StackPanel Grid.Column="1">
+                                    <TextBlock Text="{DynamicResource Slot.Morning}"
+                                               Style="{StaticResource FieldLabel}" />
+                                    <TextBox Text="{Binding NoonEnd, UpdateSourceTrigger=PropertyChanged}"
+                                             Width="80" Padding="6,4" HorizontalAlignment="Left" />
+                                </StackPanel>
+                                <StackPanel Grid.Column="2">
+                                    <TextBlock Text="{DynamicResource Slot.Noon}"
+                                               Style="{StaticResource FieldLabel}" />
+                                    <TextBox Text="{Binding EveningEnd, UpdateSourceTrigger=PropertyChanged}"
+                                             Width="80" Padding="6,4" HorizontalAlignment="Left" />
+                                </StackPanel>
+                                <Button Grid.Column="3" Content="{DynamicResource Common.Confirm}"
+                                        Style="{StaticResource SoftButton}"
+                                        VerticalAlignment="Bottom"
+                                        Command="{Binding SaveScheduleCommand}" />
+                            </Grid>
+                        </StackPanel>
+                    </Border>
+
+                    <Border Style="{StaticResource SectionCard}">
+                        <StackPanel>
+                            <TextBlock Style="{StaticResource SectionTitle}"
+                                       Text="{DynamicResource Settings.About}" />
+                            <TextBlock Style="{StaticResource BodyText}" Margin="0,6,0,0"
+                                       Text="{DynamicResource Settings.Version}" />
+                        </StackPanel>
+                    </Border>
+                </StackPanel>
+
+                <StackPanel Grid.Column="1" Margin="0,0,16,0">
+                    <Border Style="{StaticResource SectionCard}">
+                        <StackPanel>
+                            <TextBlock Style="{StaticResource SectionTitle}"
+                                       Text="{DynamicResource Settings.Data}" />
+                            <TextBlock Style="{StaticResource FieldLabel}"
+                                       Text="{DynamicResource Settings.DataPath}" />
+                            <TextBlock Style="{StaticResource BodyText}"
+                                       Text="{Binding DataPath}" TextWrapping="Wrap" />
+
+                            <TextBlock Style="{StaticResource FieldLabel}"
+                                       Text="{DynamicResource Settings.Retention}" />
+                            <StackPanel Orientation="Horizontal">
+                                <TextBox Text="{Binding Retention, UpdateSourceTrigger=PropertyChanged}"
+                                         Width="100" Padding="6,4" VerticalContentAlignment="Center" />
+                                <TextBlock Margin="8,0,0,0" VerticalAlignment="Center"
+                                           FontSize="11" Foreground="{DynamicResource TextFaint}"
+                                           Text="{DynamicResource Settings.RetentionNever}" />
+                            </StackPanel>
+                            <TextBlock Style="{StaticResource BodyText}" Margin="0,4,0,0"
+                                       FontSize="11"
+                                       Text="{DynamicResource Settings.RetentionHint}" />
+
+                            <StackPanel Orientation="Horizontal" Margin="0,16,0,0">
+                                <Button Content="{DynamicResource Settings.ExportCsv}"
+                                        Style="{StaticResource SoftButton}"
+                                        Command="{Binding ExportCommand}" />
+                                <Button Content="{DynamicResource Settings.OpenDataFolder}"
+                                        Style="{StaticResource SoftButton}"
+                                        Margin="8,0,0,0"
+                                        Command="{Binding OpenDataCommand}" />
+                            </StackPanel>
+                            <Button Content="{DynamicResource Settings.ClearHistory}"
+                                    Style="{StaticResource SoftButton}"
+                                    Margin="0,10,0,0"
+                                    Background="{DynamicResource Negative}"
+                                    Foreground="White"
+                                    Command="{Binding ClearCommand}" />
+                        </StackPanel>
+                    </Border>
+
+                    <Border Style="{StaticResource SectionCard}"
+                            Background="{DynamicResource AccentSoft}">
+                        <StackPanel>
+                            <TextBlock Style="{StaticResource SectionTitle}"
+                                       Text="{DynamicResource Settings.Privacy}" />
+                            <TextBlock Style="{StaticResource BodyText}" Margin="0,8,0,0"
+                                       Text="{DynamicResource Settings.PrivacyBody}" />
+                        </StackPanel>
+                    </Border>
+                </StackPanel>
+            </Grid>
+        </StackPanel>
+    </ScrollViewer>
+</UserControl>

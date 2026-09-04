@@ -1,0 +1,127 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:sys="clr-namespace:System;assembly=System.Runtime">
+    <sys:String x:Key="App.Title">键迹 · 键盘使用统计</sys:String>
+
+    <sys:String x:Key="Nav.Home">今日总览</sys:String>
+    <sys:String x:Key="Nav.History">历史报告</sys:String>
+    <sys:String x:Key="Nav.Insights">习惯洞察</sys:String>
+    <sys:String x:Key="Nav.Settings">设置</sys:String>
+
+    <sys:String x:Key="Status.Recording">正在统计</sys:String>
+    <sys:String x:Key="Status.Paused">已暂停</sys:String>
+
+    <sys:String x:Key="Home.Today">今日</sys:String>
+    <sys:String x:Key="Home.TotalToday">今日按键总量</sys:String>
+    <sys:String x:Key="Home.CurrentSlot">当前时段</sys:String>
+    <sys:String x:Key="Home.ActiveMinutes">活跃分钟</sys:String>
+    <sys:String x:Key="Home.KeyboardHeat">键盘热度</sys:String>
+    <sys:String x:Key="Home.TopKeys">常用键位</sys:String>
+    <sys:String x:Key="Home.CurveTitle">24 小时活跃曲线</sys:String>
+    <sys:String x:Key="Home.YesterdayTotal">昨日按键</sys:String>
+    <sys:String x:Key="Home.CompareUp">较昨日上升</sys:String>
+    <sys:String x:Key="Home.CompareDown">较昨日下降</sys:String>
+    <sys:String x:Key="Home.CompareSame">与昨日持平</sys:String>
+    <sys:String x:Key="Home.CompareFrom">昨日</sys:String>
+    <sys:String x:Key="Home.NoData">今天还没有按键记录</sys:String>
+    <sys:String x:Key="Home.KeyUnit">次</sys:String>
+    <sys:String x:Key="Home.PerMinute">次/分</sys:String>
+
+    <sys:String x:Key="History.Title">历史报告</sys:String>
+    <sys:String x:Key="History.Day">日</sys:String>
+    <sys:String x:Key="History.Week">周</sys:String>
+    <sys:String x:Key="History.Month">月</sys:String>
+    <sys:String x:Key="History.Total">区间按键总量</sys:String>
+    <sys:String x:Key="History.HourCurve">逐时活跃曲线</sys:String>
+    <sys:String x:Key="History.SlotShare">四时段占比</sys:String>
+    <sys:String x:Key="History.KeyboardHeat">区间键盘热力图</sys:String>
+    <sys:String x:Key="History.Trend">每日趋势</sys:String>
+    <sys:String x:Key="History.NoData">所选区间暂无数据</sys:String>
+    <sys:String x:Key="History.Range">统计区间</sys:String>
+    <sys:String x:Key="History.PressPerDay">日均按键</sys:String>
+    <sys:String x:Key="History.All">全部时段</sys:String>
+
+    <sys:String x:Key="Insights.Title">习惯洞察</sys:String>
+    <sys:String x:Key="Insights.Period">洞察区间</sys:String>
+    <sys:String x:Key="Insights.Presses">按键数</sys:String>
+    <sys:String x:Key="Insights.AvgGap">平均击键间隔</sys:String>
+    <sys:String x:Key="Insights.MedianGap">中位击键间隔</sys:String>
+    <sys:String x:Key="Insights.Bursts">连击段数</sys:String>
+    <sys:String x:Key="Insights.AvgBurst">平均连击长度</sys:String>
+    <sys:String x:Key="Insights.ShortBreaks">短休息次数</sys:String>
+    <sys:String x:Key="Insights.LongBreaks">长休息次数</sys:String>
+    <sys:String x:Key="Insights.ActiveMinutes">活跃分钟</sys:String>
+    <sys:String x:Key="Insights.LongestActive">最长连续活跃</sys:String>
+    <sys:String x:Key="Insights.Hotkeys">高频快捷键</sys:String>
+    <sys:String x:Key="Insights.Modifiers">修饰键使用</sys:String>
+    <sys:String x:Key="Insights.Groups">键位类别分布</sys:String>
+    <sys:String x:Key="Insights.Weekday">星期模式</sys:String>
+    <sys:String x:Key="Insights.NoData">该区间暂无数据</sys:String>
+    <sys:String x:Key="Insights.Min">分钟</sys:String>
+    <sys:String x:Key="Insights.Ms">毫秒</sys:String>
+    <sys:String x:Key="Insights.BreakUnit">次</sys:String>
+    <sys:String x:Key="Insights.Key">个</sys:String>
+
+    <sys:String x:Key="Group.Modifier">修饰键</sys:String>
+    <sys:String x:Key="Group.Letters">字母键</sys:String>
+    <sys:String x:Key="Group.Digits">数字键</sys:String>
+    <sys:String x:Key="Group.Punctuation">标点符号</sys:String>
+    <sys:String x:Key="Group.Editing">编辑键</sys:String>
+    <sys:String x:Key="Group.Navigation">方向与翻页</sys:String>
+    <sys:String x:Key="Group.Function">功能键</sys:String>
+    <sys:String x:Key="Group.Other">其他</sys:String>
+
+    <sys:String x:Key="Weekday.Mon">周一</sys:String>
+    <sys:String x:Key="Weekday.Tue">周二</sys:String>
+    <sys:String x:Key="Weekday.Wed">周三</sys:String>
+    <sys:String x:Key="Weekday.Thu">周四</sys:String>
+    <sys:String x:Key="Weekday.Fri">周五</sys:String>
+    <sys:String x:Key="Weekday.Sat">周六</sys:String>
+    <sys:String x:Key="Weekday.Sun">周日</sys:String>
+
+    <sys:String x:Key="Slot.Night">凌晨</sys:String>
+    <sys:String x:Key="Slot.Morning">早晨</sys:String>
+    <sys:String x:Key="Slot.Noon">中午</sys:String>
+    <sys:String x:Key="Slot.Evening">夜间</sys:String>
+
+    <sys:String x:Key="Settings.Title">设置</sys:String>
+    <sys:String x:Key="Settings.General">通用</sys:String>
+    <sys:String x:Key="Settings.Language">界面语言</sys:String>
+    <sys:String x:Key="Settings.Theme">主题</sys:String>
+    <sys:String x:Key="Settings.ThemeLight">浅米色</sys:String>
+    <sys:String x:Key="Settings.ThemeDark">深色</sys:String>
+    <sys:String x:Key="Settings.AutoStart">开机自启（登录后）</sys:String>
+    <sys:String x:Key="Settings.RecordOnStartup">启动后自动开始统计</sys:String>
+    <sys:String x:Key="Settings.MinimizeTray">关闭窗口时最小化到托盘</sys:String>
+    <sys:String x:Key="Settings.Schedule">时段划分</sys:String>
+    <sys:String x:Key="Settings.ScheduleHint">依次设置三个分界点（时），四段为 0–①、①–②、②–③、③–24。</sys:String>
+    <sys:String x:Key="Settings.Data">数据</sys:String>
+    <sys:String x:Key="Settings.DataPath">数据保存位置</sys:String>
+    <sys:String x:Key="Settings.Retention">明细保留天数</sys:String>
+    <sys:String x:Key="Settings.RetentionNever">0 = 永久保留</sys:String>
+    <sys:String x:Key="Settings.RetentionHint">超过天数的按键明细将被删除，只影响原始明细；日报按统计周期重新汇总。</sys:String>
+    <sys:String x:Key="Settings.ClearHistory">清空全部统计</sys:String>
+    <sys:String x:Key="Settings.ClearConfirm">确定清空全部按键记录？此操作不可撤销。</sys:String>
+    <sys:String x:Key="Settings.ClearDone">已清空全部统计。</sys:String>
+    <sys:String x:Key="Settings.ExportCsv">导出聚合统计（CSV）</sys:String>
+    <sys:String x:Key="Settings.ExportDone">导出完成：</sys:String>
+    <sys:String x:Key="Settings.OpenDataFolder">打开数据目录</sys:String>
+    <sys:String x:Key="Settings.Privacy">隐私边界</sys:String>
+    <sys:String x:Key="Settings.PrivacyBody">本程序只记录按键时间、键位与按键类型，不记录文本内容、不截图、不联网。明细数据仅保存在本机；在输入密码等敏感内容时，请先暂停统计。</sys:String>
+    <sys:String x:Key="Settings.About">关于</sys:String>
+    <sys:String x:Key="Settings.Version">版本 0.1.0</sys:String>
+    <sys:String x:Key="Settings.AutostartError">无法写入开机自启项，请检查权限。</sys:String>
+
+    <sys:String x:Key="Tray.Show">打开主界面</sys:String>
+    <sys:String x:Key="Tray.Toggle">开始 / 暂停统计</sys:String>
+    <sys:String x:Key="Tray.Pause">暂停统计</sys:String>
+    <sys:String x:Key="Tray.Start">开始统计</sys:String>
+    <sys:String x:Key="Tray.Exit">退出</sys:String>
+
+    <sys:String x:Key="Common.Open">打开</sys:String>
+    <sys:String x:Key="Common.Close">关闭</sys:String>
+    <sys:String x:Key="Common.Confirm">确定</sys:String>
+    <sys:String x:Key="Common.Cancel">取消</sys:String>
+    <sys:String x:Key="Common.NoData">暂无数据</sys:String>
+    <sys:String x:Key="Common.Elapsed">累计</sys:String>
+</ResourceDictionary>

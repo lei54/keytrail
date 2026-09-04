@@ -1,0 +1,127 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:sys="clr-namespace:System;assembly=System.Runtime">
+    <sys:String x:Key="App.Title">キートレイル · キーボード統計</sys:String>
+
+    <sys:String x:Key="Nav.Home">今日</sys:String>
+    <sys:String x:Key="Nav.History">履歴</sys:String>
+    <sys:String x:Key="Nav.Insights">分析</sys:String>
+    <sys:String x:Key="Nav.Settings">設定</sys:String>
+
+    <sys:String x:Key="Status.Recording">記録中</sys:String>
+    <sys:String x:Key="Status.Paused">一時停止</sys:String>
+
+    <sys:String x:Key="Home.Today">今日</sys:String>
+    <sys:String x:Key="Home.TotalToday">今日のキー数</sys:String>
+    <sys:String x:Key="Home.CurrentSlot">現在の時間帯</sys:String>
+    <sys:String x:Key="Home.ActiveMinutes">アクティブ分数</sys:String>
+    <sys:String x:Key="Home.KeyboardHeat">キーボードヒート</sys:String>
+    <sys:String x:Key="Home.TopKeys">よく使うキー</sys:String>
+    <sys:String x:Key="Home.CurveTitle">24時間アクティビティ</sys:String>
+    <sys:String x:Key="Home.YesterdayTotal">昨日のキー数</sys:String>
+    <sys:String x:Key="Home.CompareUp">昨日より増加</sys:String>
+    <sys:String x:Key="Home.CompareDown">昨日より減少</sys:String>
+    <sys:String x:Key="Home.CompareSame">昨日と同水準</sys:String>
+    <sys:String x:Key="Home.CompareFrom">昨日</sys:String>
+    <sys:String x:Key="Home.NoData">今日はまだ記録がありません</sys:String>
+    <sys:String x:Key="Home.KeyUnit">回</sys:String>
+    <sys:String x:Key="Home.PerMinute">回/分</sys:String>
+
+    <sys:String x:Key="History.Title">履歴</sys:String>
+    <sys:String x:Key="History.Day">日</sys:String>
+    <sys:String x:Key="History.Week">週</sys:String>
+    <sys:String x:Key="History.Month">月</sys:String>
+    <sys:String x:Key="History.Total">区間のキー数</sys:String>
+    <sys:String x:Key="History.HourCurve">時間別アクティビティ</sys:String>
+    <sys:String x:Key="History.SlotShare">時間帯シェア</sys:String>
+    <sys:String x:Key="History.KeyboardHeat">区間キーボードヒート</sys:String>
+    <sys:String x:Key="History.Trend">日別トレンド</sys:String>
+    <sys:String x:Key="History.NoData">選択した区間にデータがありません</sys:String>
+    <sys:String x:Key="History.Range">集計区間</sys:String>
+    <sys:String x:Key="History.PressPerDay">1日平均キー数</sys:String>
+    <sys:String x:Key="History.All">すべての時間帯</sys:String>
+
+    <sys:String x:Key="Insights.Title">習慣分析</sys:String>
+    <sys:String x:Key="Insights.Period">分析区間</sys:String>
+    <sys:String x:Key="Insights.Presses">キー数</sys:String>
+    <sys:String x:Key="Insights.AvgGap">平均キー間隔</sys:String>
+    <sys:String x:Key="Insights.MedianGap">中央値キー間隔</sys:String>
+    <sys:String x:Key="Insights.Bursts">連打セッション数</sys:String>
+    <sys:String x:Key="Insights.AvgBurst">平均連打長</sys:String>
+    <sys:String x:Key="Insights.ShortBreaks">短い休止</sys:String>
+    <sys:String x:Key="Insights.LongBreaks">長い休止</sys:String>
+    <sys:String x:Key="Insights.ActiveMinutes">アクティブ分数</sys:String>
+    <sys:String x:Key="Insights.LongestActive">最長連続アクティブ</sys:String>
+    <sys:String x:Key="Insights.Hotkeys">よく使うショートカット</sys:String>
+    <sys:String x:Key="Insights.Modifiers">修飾キー</sys:String>
+    <sys:String x:Key="Insights.Groups">キー種別シェア</sys:String>
+    <sys:String x:Key="Insights.Weekday">曜日パターン</sys:String>
+    <sys:String x:Key="Insights.NoData">この区間にデータはありません</sys:String>
+    <sys:String x:Key="Insights.Min">分</sys:String>
+    <sys:String x:Key="Insights.Ms">ミリ秒</sys:String>
+    <sys:String x:Key="Insights.BreakUnit"></sys:String>
+    <sys:String x:Key="Insights.Key"></sys:String>
+
+    <sys:String x:Key="Group.Modifier">修飾キー</sys:String>
+    <sys:String x:Key="Group.Letters">英字キー</sys:String>
+    <sys:String x:Key="Group.Digits">数字キー</sys:String>
+    <sys:String x:Key="Group.Punctuation">記号</sys:String>
+    <sys:String x:Key="Group.Editing">編集キー</sys:String>
+    <sys:String x:Key="Group.Navigation">移動キー</sys:String>
+    <sys:String x:Key="Group.Function">ファンクション</sys:String>
+    <sys:String x:Key="Group.Other">その他</sys:String>
+
+    <sys:String x:Key="Weekday.Mon">月</sys:String>
+    <sys:String x:Key="Weekday.Tue">火</sys:String>
+    <sys:String x:Key="Weekday.Wed">水</sys:String>
+    <sys:String x:Key="Weekday.Thu">木</sys:String>
+    <sys:String x:Key="Weekday.Fri">金</sys:String>
+    <sys:String x:Key="Weekday.Sat">土</sys:String>
+    <sys:String x:Key="Weekday.Sun">日</sys:String>
+
+    <sys:String x:Key="Slot.Night">深夜</sys:String>
+    <sys:String x:Key="Slot.Morning">朝</sys:String>
+    <sys:String x:Key="Slot.Noon">昼</sys:String>
+    <sys:String x:Key="Slot.Evening">夜</sys:String>
+
+    <sys:String x:Key="Settings.Title">設定</sys:String>
+    <sys:String x:Key="Settings.General">一般</sys:String>
+    <sys:String x:Key="Settings.Language">表示言語</sys:String>
+    <sys:String x:Key="Settings.Theme">テーマ</sys:String>
+    <sys:String x:Key="Settings.ThemeLight">ベージュ</sys:String>
+    <sys:String x:Key="Settings.ThemeDark">ダーク</sys:String>
+    <sys:String x:Key="Settings.AutoStart">ログイン時に起動</sys:String>
+    <sys:String x:Key="Settings.RecordOnStartup">起動後すぐ記録</sys:String>
+    <sys:String x:Key="Settings.MinimizeTray">閉じる時はトレイへ</sys:String>
+    <sys:String x:Key="Settings.Schedule">時間帯の境界</sys:String>
+    <sys:String x:Key="Settings.ScheduleHint">境界時刻（時）を3つ設定。0–①、①–②、②–③、③–24 に分割。</sys:String>
+    <sys:String x:Key="Settings.Data">データ</sys:String>
+    <sys:String x:Key="Settings.DataPath">保存先</sys:String>
+    <sys:String x:Key="Settings.Retention">詳細の保持日数</sys:String>
+    <sys:String x:Key="Settings.RetentionNever">0 = 無期限</sys:String>
+    <sys:String x:Key="Settings.RetentionHint">この日数より古い詳細を削除します。グラフは残った詳細から再集計されます。</sys:String>
+    <sys:String x:Key="Settings.ClearHistory">統計をすべて削除</sys:String>
+    <sys:String x:Key="Settings.ClearConfirm">すべてのキー記録を削除しますか？元に戻せません。</sys:String>
+    <sys:String x:Key="Settings.ClearDone">すべての統計を削除しました。</sys:String>
+    <sys:String x:Key="Settings.ExportCsv">集計データをCSV出力</sys:String>
+    <sys:String x:Key="Settings.ExportDone">出力先:</sys:String>
+    <sys:String x:Key="Settings.OpenDataFolder">データフォルダを開く</sys:String>
+    <sys:String x:Key="Settings.Privacy">プライバシー境界</sys:String>
+    <sys:String x:Key="Settings.PrivacyBody">このアプリはキー時刻・キーコード・種別のみ記録します。テキスト内容の記録、スクリーンショット、通信は行いません。データはこのPC内にのみ保存されます。パスワードなどの入力時は一時停止してください。</sys:String>
+    <sys:String x:Key="Settings.About">このアプリについて</sys:String>
+    <sys:String x:Key="Settings.Version">バージョン 0.1.0</sys:String>
+    <sys:String x:Key="Settings.AutostartError">自動起動の設定を書き込めませんでした。</sys:String>
+
+    <sys:String x:Key="Tray.Show">メイン画面を開く</sys:String>
+    <sys:String x:Key="Tray.Toggle">開始 / 一時停止</sys:String>
+    <sys:String x:Key="Tray.Pause">一時停止</sys:String>
+    <sys:String x:Key="Tray.Start">開始</sys:String>
+    <sys:String x:Key="Tray.Exit">終了</sys:String>
+
+    <sys:String x:Key="Common.Open">開く</sys:String>
+    <sys:String x:Key="Common.Close">閉じる</sys:String>
+    <sys:String x:Key="Common.Confirm">OK</sys:String>
+    <sys:String x:Key="Common.Cancel">キャンセル</sys:String>
+    <sys:String x:Key="Common.NoData">データなし</sys:String>
+    <sys:String x:Key="Common.Elapsed">合計</sys:String>
+</ResourceDictionary>
